@@ -27,7 +27,7 @@ if __name__ == '__main__':
     palabras = ['Inove', 'casa', 'programacion']
 
     # Utilice la función map para mapear una lambda expression
-    # que retorne el tamaño (len) de cada texto em cata iteración
+    # que retorne el tamaño (len) de cada texto em cada iteración
     # de la lista de textos
     # El resultado (el len de cada palabra) se debe ir almacenando
     # en una nueva lista
