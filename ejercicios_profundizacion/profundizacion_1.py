@@ -28,10 +28,18 @@ que ya dispongamos de Python. El objetivo es:
         la suma y los números recoletados
     b) Si el número es mayor a 21 se debe informar al usuario que perdio
 '''
+import random
+import numpy as np
 
 if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+
+    lista1 = [random.randint(1, 11) for x in range(3)]
+
+    suma = np.sum(lista1)
+    resultado = np.where(suma <= 21, suma, 'Perdiste!')
+    print('{} números recolectados:{}'.format(resultado, lista1))
 
     print("terminamos")
