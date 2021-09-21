@@ -39,7 +39,6 @@ if __name__ == '__main__':
     lista1 = [random.randint(1, 11) for x in range(3)]
 
     suma = np.sum(lista1)
-    resultado = np.where(suma <= 21, suma, 'Perdiste!')
-    print('{} números recolectados:{}'.format(resultado, lista1))
-
+    resultado = np.where(suma <= 21, 'Bien hecho!', 'Perdiste!')
+    print('Resultado:{} Puntaje:{} \n{}'.format(lista1, suma, resultado))
     print("terminamos")
