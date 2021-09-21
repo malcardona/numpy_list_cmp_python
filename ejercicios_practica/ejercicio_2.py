@@ -20,6 +20,8 @@ if __name__ == '__main__':
 
     # len_string = lambda......
 
+    len_string = lambda x: len(x)
+
     # 2)
     # Lista de string
     palabras = ['Inove', 'casa', 'programacion']
@@ -35,5 +37,8 @@ if __name__ == '__main__':
     # directamente la lambda.
 
     # palabras_len = list(map....)
+
+    len_list_string = list(map(lambda x: len(x), palabras))
+    print(len_list_string)
 
     print("terminamos")
